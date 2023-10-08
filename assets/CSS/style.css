@@ -154,9 +154,7 @@ a:hover{
         transition: border-left 0.3s;
         border-left: 10px solid #782221;
 }
-/* .right_bloc h2:hover{
-        border-left-color:#782221;
-} */
+
 .main_section_grid li,p{
         transition: border-left 0.3s;
         border-right: 5px solid transparent;
