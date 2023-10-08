@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap');
+@font-face {
+        font-family: 'Raleway';
+        src: url('../fonts/Raleway-VariableFont_wght.woff');
+        src: url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype'),
+        url('../fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype'),/* 
+        url('../fonts/Raleway-Black.ttf') format('truetype'), 
+        url('../fonts/Raleway-BlackItalic.ttf') format('truetype'),
+        url('../fonts/Raleway-Bold.ttf') format('truetype'), 
+        url('../fonts/Raleway-BoldItalic.ttf') format('truetype'), 
+        url('../fonts/Raleway-ExtraBold.ttf') format('truetype'), 
+        url('../fonts/Raleway-ExtraBoldItalic.ttf') format('truetype'), 
+        url('../fonts/Raleway-ExtraLight.ttf') format('truetype'), 
+        url('../fonts/Raleway-ExtraLightItalic.ttf') format('truetype'),  
+        url('../fonts/Raleway-Italic.ttf') format('truetype'), 
+        url('../fonts/Raleway-Light.ttf') format('truetype'), 
+        url('../fonts/Raleway-LightItalic.ttf') format('truetype'),
+        url('../fonts/Raleway-Medium.ttf') format('truetype'), 
+        url('../fonts/Raleway-MediumItalic.ttf') format('truetype'),
+        url('../fonts/Raleway-Regular.ttf') format('truetype'), 
+        url('../fonts/Raleway-SemiBold.ttf') format('truetype'), 
+        url('../fonts/Raleway-SemiBoldItalic.ttf') format('truetype'), 
+        url('../fonts/Raleway-Thin.ttf') format('truetype'),
+        url('../fonts/Raleway-ThinItalic.ttf') format('truetype'), 
+        url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype'), 
+        url('../fonts/Raleway-VariableFont_wght.woff') format('truetype');         */;
+}
+
+/* Style concernant la photo de profil, le nom ainsi que le titre(developpeur web junior) */
+body{
+        margin: 0;
+        padding: 0;
+}
+h1,h2,h3,h4,h5{
+        font-family: 'Lato', sans-serif;
+        font-variant-numeric: lining-nums;
+}
+li,p,a,small{
+        font-family:'Raleway',serif; ;
+        font-variant-numeric: lining-nums;
+}
+header{
+        display: flex;
+        justify-content: center;
+}
+figure{
+        width: 160px;
+        height: 160px;
+}
+figure img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 80px;
+        box-shadow: 0 0 10px #FFF;
+        margin-bottom: 20px;
+        margin-top: 20px;
+}
+figure a:hover{
+        cursor:zoom-in;
+}
+figcaption{
+        position: absolute;
+        width: 15%;
+        font-family: 'Raleway',serif;
+        color: #FFF;
+        margin-left: -18px;
+        margin-bottom: 15px;
+        font-size: 1.1em;
+        font-weight:500;
+}
+.profil{
+        background: #782221;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 1160px;
+}
+h1{
+        color: #FFF;
+        font-size: 1.5em;
+        margin-top: 75px;
+        margin-bottom: 40px;
+        font-weight: 400;
+}
+/* Style concernant la section contenant les adresses */
+.adress_bloc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+}
+.adress_bloc_linktext{
+        text-align: left;
+}
+.adress_bloc_container{
+        background: #2c1d27;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 250px;
+        width: 1160px;
+        height: 100px;
+}
+.adress_bloc a{
+        font-style:italic;
+        color: #FFF;
+        text-decoration: none;
+}
+a:hover{
+        text-decoration: underline;
+        text-decoration-color: #782221;
+        text-decoration-thickness:5px;
+        
+}
+/* Style concernant le cops du CV */
+.main_section{
+        display: flex;
+        justify-content: center;
+}
+.main_section_grid{
+        display: grid;
+        grid-template-columns: 1.1fr 2fr;
+        width: 1160px;
+}
+/* Bloc de gauche en bordeau */
+.left_bloc{
+        background-color: #782221;
+        height: 1120px;
+}
+.left_bloc h2{
+        background:#dbc2a4 ;
+        color:black;
+        font-size: 1.3em;
+        width: 350px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+}
+.left_bloc p, .left_bloc li{
+        color: #FFF;
+        font-weight: 500;
+}
+.left_bloc_about p{
+        width: 350px;
+        margin-top: 25px;
+        margin-bottom: 40px;
+        padding-left: 20px;
+        text-indent: 30px;
+        text-align: justify;
+}
+.left_bloc_language{
+        margin-bottom: 40px;
+}
+/* Grand bloc de droit en blanc */
+.right_bloc{
+        padding: 10px 10px;
+        padding: 0 30px 0 30px;
+        height: 1120px;
+        border-width: 0 2px 0 0;
+        border-style: solid;
+        border-color: black;
+}
+.right_bloc h2{
+        background:#dbc2a4 ;
+        color:black;
+        font-size: 1.3em;
+        width: 670px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        transition: border-left 0.3s;
+        border-left: 10px solid #782221;
+}
+/* .right_bloc h2:hover{
+        border-left-color:#782221;
+} */
+.main_section_grid li,p{
+        transition: border-left 0.3s;
+        border-right: 5px solid transparent;
+        width: fit-content;
+}
+.main_section_grid li:hover, p:hover{
+        border-right-color:#782221;
+}
+.right_bloc h1, p, li{
+        font-weight:500;
+}
+.right_bloc h2, h3, h4, h5{
+        font-size: 1.2em;
+}
+.right_bloc_experience{
+        margin-top: 20px;
+        margin-bottom: 50px;
+}
+.right_bloc_diplomes{
+        margin-bottom: 30px;
+}
+/* Bas de page */
+footer {
+        display: flex;
+        justify-content: center;
+}
+.icon_bloc{
+        background: #782221;
+        display: grid;
+        justify-items: center;
+        width: 1160px;
+}
+.icon_bloc_icons{
+        margin-top: 20px;
+}
+.icon_bloc_icons a{
+        padding: 5px;
+}
+.icon_bloc img{
+        width:40px;
+}
+small{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #FFF;
+        font-weight: 400;
+        font-size: 0.8em;
+}
+.icon_bloc_icons a{
+        opacity: 1;
+        transition: opacity 0.3s;
+}
+.icon_bloc_icons a:hover{
+        opacity: 0.5;
+}
